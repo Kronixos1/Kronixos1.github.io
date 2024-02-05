@@ -1,232 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MarCar</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    
 </head>
 <body>
     
-    <div class="container-lg">
-        <div class="row pt-5 justify-content-center display-5 font-weight-bold p-5">
-            <div class="col-2 bg-white border border-dark rounded pd-5 m-5 p-5 ">
-                <h3>TELEFON</h3>
-            </div>
-            <div class="col-4 bg-white border border-dark rounded pd-5 m-5" id="phoneContainer">
-                <ol>
-                    1. <i class="bi bi-telephone"></i>
-                    2. <i class="bi bi-telephone-fill"></i>
-                    3. <i class="bi bi-telephone-inbound"></i>
-                    4. <i class="bi bi-telephone-inbound-fill"></i>
-                    5. <i class="bi bi-telephone-plus"></i>
-                    6. <i class="bi bi-telephone-plus-fill"></i>
-                </ol>
-            </div>
-            <div class="class col-2 bg-white border border-dark rounded pd-5 m-5" >
-                <h3>KOLOR IKON</h3>
-                <button class="btn border-dark" style="background-color: #FFD700 !important;" onclick="changePhoneIcon('#FFD700')">Jasny Złoty</button>
-                <button class="btn border-dark" style="background-color: #e6b800 !important;" onclick="changePhoneIcon('#e6b800')">Ciemny Złoty</button>
-                <button class="btn border-dark" style="background-color: #6600ff !important;" onclick="changePhoneIcon('#6600ff')">Fiołkowy</button>
-                <button class="btn border-dark" style="background-color: green !important;" onclick="changePhoneIcon('green')">Zielony</button>
-                <button class="btn border-dark text-white" style="background-color: black !important;" onclick="changePhoneIcon('black')">Czarny</button>
-                <button class="btn border-dark" style="background-color: white !important;" onclick="changePhoneIcon('white')">Biały</button>
-                <button class="btn border-dark" style="background-color: gray !important;" onclick="changePhoneIcon('gray')">Szary</button>
-                <button class="btn border-dark" style="background-color: red !important;" onclick="changePhoneIcon('red')">Czerwony</button>
-                <button class="btn border-dark text-white" style="background-color: #303030 !important;" onclick="changePhoneIcon('#303030')">Ciemny Szary</button>
-                <button class="btn border-dark " style="background-color: blue !important;" onclick="changePhoneIcon('blue')">Niebieski</button>
-            </div>
-        </div>
-    </div>
 
-    <div class="container-lg">
-        <div class="row pt-5 justify-content-center display-5 font-weight-bold p-5">
-            <div class="col-2 bg-white border border-dark rounded pd-5 m-5 p-5 ">
-                <h3>MAIL</h3>
-            </div>
-            <div class="col-4 bg-white border border-dark rounded pd-5 m-5" id="phoneContainer">
-                <ol>
-                    1. <i class="bi bi-envelope"></i>
-                    2. <i class="bi bi-envelope-at"></i>
-                    3. <i class="bi bi-envelope-at-fill"></i>
-                    4. <i class="bi bi-envelope-fill"></i>
-                    5. <i class="bi bi-envelope-open"></i>
-                    6. <i class="bi bi-envelope-open-fill"></i>
-                    7. <i class="bi bi-envelope-paper"></i>
-                    8. <i class="bi bi-envelope-plus"></i>
-                    9. <i class="bi bi-envelope-plus-fill"></i>
-                </ol>
-            </div>
-            <div class="class col-2  pd-5 m-5" >
-                
-            </div>
-        </div>
-    </div>
 
-    <div class="container-lg">
-        <div class="row pt-5 justify-content-center display-5 font-weight-bold p-5">
-            <div class="col-2 bg-white border border-dark rounded pd-5 m-5 p-5 ">
-                <h3>O NAS</h3>
-            </div>
-            <div class="col-4 bg-white border border-dark rounded pd-5 m-5" id="phoneContainer">
-                <ol>
-                    1. <i class="bi bi-file-person"></i>
-                    2. <i class="bi bi-file-person-fill"></i>
-                    3. <i class="bi bi-journal-bookmark"></i>
-                    4. <i class="bi bi-journal-bookmark-fill"></i>
-                    5. <i class="bi bi-person"></i>
-                    6. <i class="bi bi-person-badge"></i>
-                    7. <i class="bi bi-person-badge-fill"></i>
-                    8. <i class="bi bi-patch-question"></i>
-                    9. <i class="bi bi-patch-question-fill"></i>
-                    10. <i class="bi bi-question"></i>
-                    11. <i class="bi bi-question-circle"></i>
-                    12. <i class="bi bi-question-circle-fill"></i>
-                    13. <i class="bi bi-book"></i>
-                    14. <i class="bi bi-book-fill"></i>
-                    15. <i class="bi bi-bookmark-dash"></i>
-                    16. <i class="bi bi-bookmark-dash-fill"></i>
-                    17. <i class="bi bi-bookmark-fill"></i>
-                </ol>
-            </div>
-            <div class="class col-2  pd-5 m-5" >
-                
-            </div>
-        </div>
-    </div>
 
-    <div class="container-lg">
-        <div class="row pt-5 justify-content-center display-5 font-weight-bold p-5">
-            <div class="col-2 bg-white border border-dark rounded pd-5 m-5 p-5 ">
-                <h3>RÓŻNE</h3>
-            </div>
-            <div class="col-4 bg-white border border-dark rounded pd-5 m-5" id="phoneContainer">
-                <ol>
-                    1. <i class="bi bi-truck"></i>
-                    2. <i class="bi bi-box-seam"></i>
-                    3. <i class="bi bi-box-seam-fill"></i>
-                    4. <i class="bi bi-box2"></i>
-                    5. <i class="bi bi-box2-fill"></i>
-                    6. <i class="bi bi-car-front"></i>
-                    7. <i class="bi bi-car-front-fill"></i>
-                </ol>
-            </div>
-            <div class="class col-2  pd-5 m-5" >
-                
-            </div>
-        </div>
-    </div>
-    <hr>
-    <!--
-    <div class="container-lg">
-        <div class="row pt-5 justify-content-center display-5 font-weight-bold p-5">
-            <div class="col-4 bg-white border border-dark rounded pd-8 m-8 p-2">
-                <ul>
-                    <li>Paleta 1: <button class="btn" onclick="changePallet(1)">Wybierz</button></li>
-                    <li>Paleta 2: <button class="btn" onclick="changePallet(2)">Wybierz</button></li>
-                    <li>Paleta 3: <button class="btn" onclick="changePallet(3)">Wybierz</button></li>
-                    <li>Paleta 4: <button class="btn" onclick="changePallet(4)">Wybierz</button></li>
-                    <li>Paleta 5: <button class="btn" onclick="changePallet(5)">Wybierz</button></li>
-                    <li>Paleta 6: <button class="btn" onclick="changePallet(6)">Wybierz</button></li>
-                    <br><br><br><br><br><br><br>
-                </ul>
-            </div>
-            <div class="col-4 bg-white border border-dark rounded pd-8 m-8 p-2">
-                <div id="contentExample">
-                    <h1><div id="palletHolder"><div id="currentPallet">Paleta 1</div></div></h1>
-                    <button class="btn" id="buttonExample">Przykładowy przycisk</button>
-                    <h3 id="#textExample">Przykładowy tekst który się znajdzie na stronie</h3>
+    <div class="container-fluid"> <!-- TOPKA-->
+        <div class="row" style="background-color: white;">
+            <div class="col-2 border border-end border-dark "><h1 style="font-size: 400% !important;"><i class="bi bi-truck"></i> LOGO</h1></div>
+            <div class="col-7"> <h2>Lorem ipsum dolor sit.</h2></div>
+            <div class="col-3 border border-start border-dark">
+                <div class="container-fluid">
+                    <div class="row text-center pt-3 justify-content-center" style="font-size: 150%;">
+                        <div class="col1 m-2">
+                            <a href="#" style="color:black !important;"><i class="bi bi-1-square-fill"></i>Oferta</a>
+                        </div>
+                        <div class="col1 m-2">
+                            <a href="#" style="color:black !important;"><i class="bi bi-envelope-at"></i>Kontakt</a>
+                        </div>
+                        <div class="col1 m-2">
+                            <a href="#" style="color:black !important;"><i class="bi bi-person-badge-fill"></i>O nas</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    -->
 
-    <style>
-        body{
-            background-color: beige;
-        }
-        i{
-            font-size: 300%;
-        }
-        #contentExample{
-            position:absolute;
-            top:0;
-            bottom: 0;
-            left:0;
-            right:0;
-        }
-        #buttonExample{
-            
-        }
-    </style>
-    <script>
-        function changePhoneIcon(_color){
-            if(_color == "white"){
-                var styles = `
-            i{
-                color: ` +_color+ `;
-            }
-            #phoneContainer{
-                background-color: black !important;
-            }
-            
-            `
-            }else{
-                var styles = `
-            i{
-                color: ` +_color+ `
-            }
-            #phoneContainer{
-                background-color: white !important;
-            }
-            
-            `
-            }
-            
-        var styleSheet = document.createElement("style")
-        styleSheet.innerText = styles
-        document.head.appendChild(styleSheet)
-        }
-        function changePallet(_pNumber){ //contentExample
-            if(_pNumber == 1){
-                console.log("paleta1")
-                var styles = `
-                    #contentExample{
-                        color: black ;
-                        background-color:white !important;
-                    }
-                    #buttonExample{
-                        background-color: light-gray !important;
-                    }
-                    #textExample{
-                        color: #666666 !important;
-                    }
-                `
-            }
-            if(_pNumber == 2){
-                console.log("paleta1")
-                var styles = `
-                    #contentExample{
-                        color: white ;
-                        background-color:black !important;
-                    }
-                    #buttonExample{
-                        background-color: light-gray !important;
-                    }
-                    #textExample{
-                        color:red !imporant;
-                    }
-                `
-            }
+    <div class="Panorama"> <!-- Panorama-->
+        <div class="leftArrow"></div>
+        <div class="rightArrow"></div>
 
-            var styleSheet = document.createElement("style")
-            styleSheet.innerText = styles
-            document.head.appendChild(styleSheet)
-        }
-        //aa
-    </script>
+        <div class="container-fluid m-1" style="height: 100% !important;">
+            <div class="row justify-content-center m-1">
+                <div id="leftImgCont" class="col1 m-1 p-1 pt-5" style="width: 20%; height: 20%;">
+                    <div class="imgLeftContainer"></div>
+                </div>
+                <div class="col2 m-1 p-1" style="width: 30%; height: 30%;">
+                    <div class="imgContainer"></div>
+                </div>
+                <div id="rightImgCont" class="col3 m-1 p-1 pt-5" style="width: 20%; height: 20%;">
+                    <div class="imgRightContainer"></div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+    
+    
+    <div class="truckAnimationContainer"> <!--Container for the truck animation-->
+        <div class="Bus"><div class="InnerBus"><i class="bi bi-truck" id="BusAnimatedIcon"></i></div></div>
+        <div class="LeftBuilding">
+
+        </div>
+        <div class="LogoAnimated">
+            <img class="img-fluid" src="images/logo200x100.jpg"/>
+        </div>
+        <div class="RightBuilding">
+
+        </div>
+    </div>
+    
+    <div class="container-fluid p-1" style="background-color: rgb(70, 70, 70);"></div>
+    <div class="container-fluid p-1" style="background-color: rgb(18, 18, 18);"></div>
+    
+    
+
+    
+    <div class="container-fluid mt-5"> <!-- MAIN-->
+        <div class="row text-center justify-content-center">
+            <div class="col-6 m-1 mr-5" style="background-color: white;">
+                <h1>ABC</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sequi!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit inventore autem expedita in, veritatis quidem fuga, magnam at reiciendis culpa porro minus ipsam, non modi quae tenetur mollitia tempora ut beatae! Quia unde recusandae, dolore aut voluptatem ea. Necessitatibus veritatis tempore repudiandae eligendi officia totam, inventore hic pariatur molestias libero, quam, autem natus cupiditate.
+                <br><br><br><br><br><br><br><br>
+            </div>
+            
+            <div class="col-4 m-1 ml-5" style="background-color: white;">
+                <h1>ABC</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5"> <!-- MAIN-->
+        <div class="row text-center justify-content-center">
+            <div class="col-6 m-1 mr-5" style="background-color: white;">
+                <h1>ABC</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sequi!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit inventore autem expedita in, veritatis quidem fuga, magnam at reiciendis culpa porro minus ipsam, non modi quae tenetur mollitia tempora ut beatae! Quia unde recusandae, dolore aut voluptatem ea. Necessitatibus veritatis tempore repudiandae eligendi officia totam, inventore hic pariatur molestias libero, quam, autem natus cupiditate.
+                <br><br><br><br><br><br><br><br>
+            </div>
+            
+            <div class="col-4 m-1 ml-5" style="background-color: white;">
+                <h1>ABC</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5"> <!-- MAIN-->
+        <div class="row text-center justify-content-center">
+            <div class="col-6 m-1 mr-5" style="background-color: white;">
+                <h1>ABC</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sequi!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit inventore autem expedita in, veritatis quidem fuga, magnam at reiciendis culpa porro minus ipsam, non modi quae tenetur mollitia tempora ut beatae! Quia unde recusandae, dolore aut voluptatem ea. Necessitatibus veritatis tempore repudiandae eligendi officia totam, inventore hic pariatur molestias libero, quam, autem natus cupiditate.
+                <br><br><br><br><br><br><br><br>
+            </div>
+            
+            <div class="col-4 m-1 ml-5" style="background-color: white;">
+                <h1>ABC</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5"> <!-- MAIN-->
+        <div class="row text-center justify-content-center">
+            <div class="col-6 m-1 mr-5" style="background-color: white;">
+                <h1>ABC</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, sequi!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit inventore autem expedita in, veritatis quidem fuga, magnam at reiciendis culpa porro minus ipsam, non modi quae tenetur mollitia tempora ut beatae! Quia unde recusandae, dolore aut voluptatem ea. Necessitatibus veritatis tempore repudiandae eligendi officia totam, inventore hic pariatur molestias libero, quam, autem natus cupiditate.
+                <br><br><br><br><br><br><br><br>
+            </div>
+            
+            <div class="col-4 m-1 ml-5" style="background-color: white;">
+                <h1>ABC</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    
+    
+    
 </body>
 </html>

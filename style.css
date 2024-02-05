@@ -1,0 +1,140 @@
+body{
+    background-color: rgb(70, 70, 70);
+}
+.quickMenu{
+    
+}
+.Panorama{
+    background-color: black;
+    width: 100%;
+    
+    user-select: none
+}
+
+.LeftBuilding{
+    z-index: 99;
+    width: 100px;
+    height: 100px;
+    float:left;
+    background-color: greenyellow;
+}
+.RightBuilding{
+    z-index: 99;
+    width: 100px;
+    height: 100px;
+    float:right;
+    background-color: orange;
+}
+.truckAnimationContainer{
+    margin-bottom: 100px;
+}
+.Bus{
+    z-index: 2;
+    position:absolute;
+    background-color: rgb(70, 70, 70);
+    color:black;
+    width: 400px;
+    height: 100px;
+}
+#BusAnimatedIcon{
+    position: absolute;
+    top:-15px;
+    font-size: 600%;
+}
+.LogoAnimated{
+    z-index: 1;
+    position: absolute;
+    left:calc(50% - 100px);
+    width: 200px;
+    height: 100px;
+    float:right;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.leftArrow{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    background-color: gainsboro;
+    float: left;
+    top:200px;
+    z-index: 10;
+}
+.rightArrow{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    background-color: gainsboro;
+    float: right;
+    top:200px;
+    z-index: 10;
+}
+
+
+.generatedImgLeft{
+    height: 100%;
+    width: 100%;
+    
+}
+.generatedImg{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.generatedImRight{
+    height: 100%;
+    width: 100%;
+}
+/*
+.generatedImgLeft{
+    position:absolute;
+    max-height: 400px;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    top:160px;
+    left:10%;
+    opacity: 70%;
+}
+.generatedImg{
+    position: absolute;
+    max-height: 540px;
+    max-width: 540px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    left: calc(50% - 540px/2)
+}
+.generatedImRight{
+    position: absolute;
+    max-height: 400px;
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    top:160px;
+    right:10%;
+    opacity: 70%;
+}
+*/
+
+.generatedImgLeft{
+    opacity: 50%;
+    transition: opacity 1s ease-out 100ms;
+}
+.generatedImRight{
+    opacity: 50%;
+    transition: opacity 1s ease-out 100ms;
+}
+.generatedImgLeft:hover{
+    opacity: 100%;
+    
+}
+.generatedImRight:hover{
+    opacity: 100%;
+}
