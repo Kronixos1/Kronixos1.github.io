@@ -48,26 +48,33 @@ body{
     width: 200px;
     height: 100px;
     float:right;
-    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 200%;
+    color:black;
 }
-
-
+.ArrowButton{
+    transition: color 0.5s ease-out 50ms;
+}
+.ArrowButton:hover{
+    color:white;
+    cursor: pointer;
+}
 .leftArrow{
     position:relative;
     width: 100px;
     height: 100px;
-    background-color: gainsboro;
+    
     float: left;
-    top:200px;
+    top:50%;
     z-index: 10;
 }
 .rightArrow{
     position:relative;
     width: 100px;
     height: 100px;
-    background-color: gainsboro;
+    
     float: right;
-    top:200px;
+    top:50%;
     z-index: 10;
 }
 
@@ -133,8 +140,9 @@ body{
 }
 .generatedImgLeft:hover{
     opacity: 100%;
-    
+    cursor: pointer;
 }
 .generatedImRight:hover{
     opacity: 100%;
+    cursor: pointer;
 }
