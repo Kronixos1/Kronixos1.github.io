@@ -107,7 +107,7 @@ function PanoramaRight(){
 
 
 //<img class="img-fluid" src="images/logo200x100.jpg"/>
-let busCounter = 0;
+var busCounter = 0;
 bus = $(".Bus");
 logo = $(".LogoAnimated");
 SWidth = $(window).width();
