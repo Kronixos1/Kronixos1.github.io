@@ -110,49 +110,60 @@ function PanoramaRight(){
 var busCounter = 0;
 bus = $(".Bus");
 logo = $(".LogoAnimated");
-SWidth = $(window).width();
+screenW = $(window).width();
+busLineWidth = $("#BusLine").width();
+
 function AnimateBus(){
     bus.css({
-        "left": "100px",
-        "width": SWidth/2,
+        "left": "2px",
+        "width": busLineWidth/2+150,
         "opacity": 0
     });
-   
+    
+    logo.css("left", busLineWidth/2-150)
     logo.css("opacity", 0)
     logo.empty()
     
     if(busCounter==0){
-        logo.prepend('<span>Transport Pojazdów</span>')
+        logo.prepend('<h1>Transport Pojazdów</h1>')
     }
     else if(busCounter==1){
-        logo.prepend('Duże Gabaryty')
+        logo.prepend('<h1>Duże<br>Gabaryty</h1>')
     }
     else if(busCounter==2){
-        logo.prepend('Przeprowadzka')
+        logo.prepend('<h1 style="position: relative;top:25%">Przeprowadzki</h1>')
     }
     else{
-        logo.prepend('<img class="img-fluid" src="images/logo200x100.jpg"/>')
+        logo.prepend('<img class="img-fluid" src="images/logo300x110.png"/>')
     }
-
+    
     bus.animate({
         opacity: "100%"
-    }, 500, function () { // End of cycle1 fadein
+    }, 500, function () { 
+        
         logo.animate({
             opacity: "100%"
         }, 2000)
+        
         bus.animate({
-            left: SWidth/2 + 100,
+            left: busLineWidth-150,
             width: "100px"
-        }, 2500, function () { //end of cycle2 go to mid and stop
+        }, 2500, function () { 
+            
             bus.animate({
-                left: SWidth-200,
-                width: "100px"
-            }, 2500, function () { //end of cycle3 start from mid and go to end
+                width: "100px",
+                opacity: "0%"
+            }, 500)
+            
+            bus.animate({
+                left: busLineWidth-200,
+            }, 100, function () { 
                 if(busCounter != 3){
                     logo.animate({
                         opacity: "0%"
                     }, 500)
                 }
+                
                 bus.animate({
                     opacity: "0%"
                 }, 500, function(){
@@ -164,7 +175,7 @@ function AnimateBus(){
                             nIntervSlideShow = setInterval(NextImg, slideTime);
                         }
                     }
-                }) //end of cycle4 fadeout
+                }) 
             })
         })
     })

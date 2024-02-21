@@ -1,9 +1,7 @@
 body{
     background-color: rgb(70, 70, 70);
 }
-.quickMenu{
-    
-}
+
 .Panorama{
     background-color: black;
     width: 100%;
@@ -28,29 +26,11 @@ body{
 .truckAnimationContainer{
     margin-bottom: 100px;
 }
-.Bus{
-    z-index: 2;
-    position:absolute;
-    background-color: rgb(70, 70, 70);
-    color:black;
-    width: 400px;
-    height: 100px;
-}
+
 #BusAnimatedIcon{
     position: absolute;
     top:-15px;
     font-size: 600%;
-}
-.LogoAnimated{
-    z-index: 1;
-    position: absolute;
-    left:calc(50% - 100px);
-    width: 200px;
-    height: 100px;
-    float:right;
-    text-align: center;
-    font-size: 200%;
-    color:black;
 }
 .ArrowButton{
     transition: color 0.5s ease-out 50ms;
@@ -101,7 +81,7 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    
     top:160px;
     left:10%;
     opacity: 70%;
@@ -145,4 +125,77 @@ body{
 .generatedImRight:hover{
     opacity: 100%;
     cursor: pointer;
+}
+
+#BusLine{
+    background-color: white;
+}
+.Bus{
+    z-index: 2;
+    position:absolute;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    width: 400px;
+    height: 110px;
+}
+.LogoAnimated{
+    z-index: 1;
+    position: absolute;
+    /*left:calc(50% - 200px);*/
+    width: 300px;
+    height: 110px;
+    float:right;
+    text-align: center;
+    font-size: 150%;
+    color:black;
+}
+
+.LogoMain{
+    border: 1px black solid;
+    width: 275px;
+    height: 100px;
+    padding: 1%;
+    background-color: blanchedalmond;
+    font-size: 200%;
+}
+.LogoLeft{
+    margin-right: 2%;
+    background-color: black;
+    color:white;
+    width: 50%;
+    float:left;
+    height: 100%;
+}
+.LogoRight{
+    background-color: white;
+    color: black;
+    width: 48%;
+    float:left;
+    height: 100%;
+}
+
+.textContent{
+    text-align: center;
+}
+
+.headerTextLeft{
+    position: relative;
+    top:25%;
+    font-weight: 700 !important;
+}
+.iconStyle{
+    color:goldenrod;
+    position: absolute;
+    bottom: 10px;
+    font-size: 200%;
+}
+.textImportant{
+    color:goldenrod;
+    font-weight: bold;
+}
+.textNormalBreaker{
+    font-weight: 600;
+}
+.textNormalMain{
+    text-align: justify;
 }
