@@ -199,3 +199,40 @@ body{
 .textNormalMain{
     text-align: justify;
 }
+.textNormalImportant{
+    text-decoration: underline;
+}
+.textList{
+    font-size: 150%;
+}
+#liftButton{
+
+    color: #007bff;
+    cursor: pointer;
+}
+#LiftImageContainer{
+    
+    position: relative;
+}
+
+.imgLift{
+    padding: 0;
+    margin: 0;
+    width: 49.5%;
+    height: 40%;
+    top: 10;
+    right: 100px;
+}
+
+#liftCloseButton{
+    z-index: 999999;
+    color:gray;
+    position: relative;
+    bottom: 40%;
+    left: 0%;
+    font-size: larger;
+    cursor: pointer;
+}
+a{
+    text-decoration: underline;
+}

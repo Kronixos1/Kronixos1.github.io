@@ -9,7 +9,7 @@ $(document).ready(function() {
     console.log("JS Loaded");
 
     AnimateBus();
-
+    HideLift();
     
     
     PanoramaMain();
@@ -30,6 +30,12 @@ $(document).ready(function() {
         PrevImg()
     });
 
+    $("#liftButton").on("click", function(){
+        ViewLift()
+    });
+    $("#liftCloseButton").on("click", function(){
+        HideLift();
+    });
     
     
     
@@ -41,6 +47,30 @@ $(document).ready(function() {
     SlidePause($(".ArrowButton"));
     
 });
+
+imgCont = $("#LiftImageContainer")
+imgClose = $("#liftCloseButton")
+function ViewLift(){
+   
+    PopIn(imgCont)
+    PopIn(imgClose)
+
+    imgClose.css({
+        cursor: "pointer"
+    })
+}
+function HideLift(){
+    imgCont.animate({
+        opacity: "0%"
+    }, 250)
+    imgClose.animate({
+        opacity: "0%"
+    }, 250)
+    imgClose.css({
+        cursor: "default"
+    })
+}
+
 
 function SlidePause(_object){
     _object.hover(
@@ -180,3 +210,5 @@ function AnimateBus(){
         })
     })
 }
+
+
