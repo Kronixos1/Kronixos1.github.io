@@ -6,6 +6,7 @@ slideTime = 5000;
 
 
 $(document).ready(function() {
+    CloseInfoBox()
     console.log("JS Loaded");
 
     AnimateBus();
@@ -37,7 +38,32 @@ $(document).ready(function() {
         HideLift();
     });
     
+    $("#facebookIconClick").on("click", function(){
+        window.open("https://www.facebook.com/people/MarCar/61551374799650/", "_blank")
+    });
     
+    $("#mailContactLink").on("click", function(){
+        navigator.clipboard.writeText("marcar.biuro@op.pl");
+        $("#mailContactLink").animate({
+            opacity: "0%"
+        }, 100)
+        $("#mailContactLink").animate({
+            opacity: "100%"
+        }, 100)
+    });
+    $("#phoneContactLink").on("click", function(){
+        navigator.clipboard.writeText("537 664 643");
+        $("#phoneContactLink").animate({
+            opacity: "0%"
+        }, 100)
+        $("#phoneContactLink").animate({
+            opacity: "100%"
+        }, 100)
+    });
+    
+    $("#contactCloseButton").on("click", function(){
+        CloseInfoBox()
+    });
     
 
     SlidePause(conL);
@@ -48,17 +74,58 @@ $(document).ready(function() {
     
 });
 
+
+
+
+function ViewInfoBox(){
+    $(".contactInfo").css({
+        display: "unset"
+    })
+    $(".pageDimmer").css({
+        display: "unset"
+    })
+
+    PopIn($(".contactInfo"))
+    PopIn($(".pageDimmer"))
+}
+function CloseInfoBox(){
+    
+    $(".contactInfo").animate({
+        opacity: "0%"
+    }, 250)
+    $(".pageDimmer").animate({
+        opacity: "0%"
+    }, 250)
+    $(".contactInfo").css({
+        display: "none"
+    })
+    $(".pageDimmer").css({
+        display: "none"
+    })
+}
+
+
+
+
+
+
+
 imgCont = $("#LiftImageContainer")
 imgClose = $("#liftCloseButton")
+
 function ViewLift(){
    
     PopIn(imgCont)
     PopIn(imgClose)
 
     imgClose.css({
-        cursor: "pointer"
+        cursor: "pointer",
+    })
+    imgCont.css({
+        display: "unset"
     })
 }
+
 function HideLift(){
     imgCont.animate({
         opacity: "0%"
@@ -68,6 +135,9 @@ function HideLift(){
     }, 250)
     imgClose.css({
         cursor: "default"
+    })
+    imgCont.css({
+        display: "none"
     })
 }
 
