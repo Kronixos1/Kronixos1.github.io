@@ -301,9 +301,7 @@ a{
     animation-fill-mode: forwards;  
     animation-duration: 0.1s;
 }
-#mailContactLink:hover{
-    before: "abc";
-}
+
 #facebookIconClick{
     cursor:pointer;
 }
@@ -347,3 +345,6 @@ a{
     padding-top: 10px;
 }
 
+ul{
+    list-style: none;
+}

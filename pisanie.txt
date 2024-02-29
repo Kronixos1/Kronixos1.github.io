@@ -43,3 +43,18 @@ Przyjmujemy płatność kartą, gotówką i blikiem.
 
 Wystawiamy FV na życzenie. Ustalona kwota netto+23%VAT.
 W tym przypadku możliwość odroczonego terminu zapłaty.
+
+
+
+<ul class="textList">
+                        <li>O ładowności 1240 kg</li>
+                        <li>Wymiary 4,2 dł. 2.2 szer. 2.2 wys.</li>
+                        <li></li>
+                        <li>Ładowność 1100 kg</li>
+                        <li>Wymiary 5 dł. 2.1 szer. 2.4 wys.</li>
+                        <li></li>
+                        <li>Możliwość załadunku z każdego boku oraz tyłem np. z rampy</li>
+                        <li>Burty całkowicie opuszczane, co ułatwia załadunek ręczny i umożliwia załadunek wózkiem widłowym <br> <!--SPRAWDŹ ZDJĘCIA COMMENT
+                            <div id="liftButton">[Sprawdź Zdjęcia]</div></li><div id="liftCloseButton"><i class="bi bi-x-square-fill"></i></div>
+                            -->
+                    </ul>
