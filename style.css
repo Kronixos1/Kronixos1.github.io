@@ -197,6 +197,9 @@ body{
 .textNormalBreaker{
     font-weight:600;
 }
+.textNormalBreakerLight{
+    font-weight:400;
+}
 .textNormalMain{
     text-align: justify;
 }
@@ -340,3 +343,7 @@ a{
     visibility: hidden;
     font-size: small;
 }
+.emptyBreaker{
+    padding-top: 10px;
+}
+
