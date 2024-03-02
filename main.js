@@ -3,7 +3,7 @@ conM = $(".imgContainer");
 conL = $(".imgLeftContainer");
 conR = $(".imgRightContainer");
 slideTime = 5000;
-
+var smallScreen = false
 
 $(document).ready(function() {
     CloseInfoBox()
@@ -72,6 +72,14 @@ $(document).ready(function() {
     
     SlidePause($(".ArrowButton"));
     
+
+
+    if(screenW >= 768){
+        $('#i-jezeliChange').append("i")
+    }else{
+        $('#i-jezeliChange').append("Jeżeli")
+        smallScreen = true;
+    }
 });
 
 

@@ -1,0 +1,87 @@
+<div class="contactInfo rounded">
+        
+            <div class="row justify justify-content-between">
+                <div id="popupLogoContainer">
+                    <img class="img-fluid" src="images/logo300x110.png" alt="">
+                </div>
+                <div class="row-1"><span id="contactCloseButton"><i class="bi bi-x-square-fill"></i></span></div>
+            </div>
+            <div class="row justify justify-content-between">
+                <div class="col-6 m-3">
+                    <ul id="contactLeftList">
+                        <li>
+                            <h3>
+                                <div class="textNormalBreaker">
+                                    Kontakt:
+                                </div>
+                            </h3>
+                        </li>
+                        <li>
+                            <h1>
+                                <div class="textNormalBreaker">
+                                    <div id="emailToolTipWrapper">
+                                        <i class="bi bi-envelope-at-fill"></i>
+                                        <a id="mailContactLink" href="javascript:;" class="contactLink">
+                                            marcar.biuro@op.pl
+                                        </a>
+                                        <div id="emailToolTip">
+                                            kliknij, aby skopiować
+                                        </div>
+                                    </div>
+                                </div>
+                            </h1>
+                        </li>
+                        <li><hr></li>
+                        <li>
+                            <h1>
+                                <div class="textNormalBreaker">
+                                    <div id="phoneToolTipWrapper">
+                                        <i class="bi bi-telephone-fill"></i>
+                                        <a id="phoneContactLink" href="javascript:;" class="contactLink">
+                                            537 664 643
+                                        </a>
+                                        <div id="phoneToolTip">
+                                            kliknij, aby skopiować
+                                        </div>
+                                    </div>
+                                </div>
+                            </h1>
+                        </li>
+                        <li><hr></li>
+                    </ul>
+                </div>
+                <div class="col-5 m-3">
+                    <ul id="contactRightList">
+                        <li>
+                            <h3>
+                                <div class="textNormalBreaker">
+                                    Znajdź nas także na
+                                </div>
+                            </h3>
+                        </li>
+                        <li>
+                            <h1>
+                                <div class="textNormalBreaker">
+                                    <a class="contactLink" href="https://www.facebook.com/people/MarCar/61551374799650/" target="_blank">Facebook</a><span id="facebookIconClick"><i class="bi bi-facebook" style="color:#316FF6"></i></span>
+                                </div>
+                                <div class="empty">
+                                    .
+                                </div>
+                            </h1>
+                        </li>
+                        
+                        <li><hr></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify justify-content-center">
+                <div class="col-9">
+                    <h3 style="text-align: center;">
+                        <span class="textNormalBreaker">
+                            Transport, który zasługuje na Twoje zaufanie! 
+                        </span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarCar</title>
+    <title>MarCar Transport</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon144x144M.ico">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -16,7 +17,7 @@
 
 
 
-    <div class="container-fluid" style="position: fixed; z-index: 99999; top: 0px;"> <!-- TOPKA-->
+    <div class="container-fluid d-none d-md-inline" style="position: fixed; z-index: 99999; top: 0px;"> <!-- TOPKA-->
         <div class="row" style="background-color: white;" >
             <div class="col-3 border border-dark" style="background-color: rgb(255, 255, 255); ">
                 <div class="justify-content-center">
@@ -25,7 +26,7 @@
                     <h4><a class="contactLink" href="https://www.facebook.com/people/MarCar/61551374799650/" target="_blank">Facebook</a><span id="facebookIconClick"><i class="bi bi-facebook" style="color:#316FF6"></i></h4>
                 </div>
             </div>
-            <div class="col-6 border border-dark" id="BusLine" style="height: 120px; background-color: rgb(255, 255, 255);">
+            <div class="col-6 border border-dark bg-sm-primary" id="BusLine" style="height: 120px; background-color: rgb(255, 255, 255);">
 
                 <div class="truckAnimationContainer"> <!--Container for the truck animation-->
                     <div class="Bus"><div class="InnerBus"><i class="bi bi-truck" id="BusAnimatedIcon"></i></div></div>
@@ -43,10 +44,10 @@
                 <div class="container-fluid">
                     <div class="row text-center pt-3 justify-content-center" style="font-size: 150%;">
                         <div class="col1 m-2">
-                            <a href="#" style="color:black !important;"><i class="bi bi-1-square-fill"></i>Oferta</a>
+                            <a class="contactLink" href="javascript:;" onclick="document.getElementById('mainOferta').scrollIntoView();"><i class="bi bi-1-square-fill"></i>Oferta</a>
                         </div>
                         <div class="col1 m-2">
-                            <a href="#" style="color:black !important;"><i class="bi bi-envelope-at"></i>Kontakt</a>
+                            <a class="contactLink" href="javascript:;" onclick="ViewInfoBox()"><i class="bi bi-envelope-at"></i>Kontakt</a>
                         </div>
                         <div class="col1 m-2">
                             <a href="#" style="color:black !important;"><i class="bi bi-person-badge-fill"></i>O nas</a>
@@ -61,7 +62,7 @@
         
         
 
-        <div class="container-fluid m-1" style="height: 100% !important;">
+        <div class="container-fluid m-1 d-none d-md-inline" style="height: 100% !important;">
             <div class="row justify-content-center m-1">
                 <div class="col1">
                     <div class="leftArrow">
@@ -89,13 +90,13 @@
             </div>
         </div>
     </div>
-    
+    <div id="mainOferta"></div>
     
     
     
     
 
-    <div class="emptyBreaker" style="margin-top: 100px;"></div>
+    <div class="emptyBreaker" style="margin-top: 120px;"></div>
 
 
     <div class="container-fluid">
@@ -151,7 +152,7 @@
 
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-5 shadow-lg rounded mr-4 ml-4 mt-5 mb-0 pl-5 pt-3 pr-5 pb-3 bg-white" style="box-shadow: 0px 0px 25px -9px rgba(66, 68, 90, 1);">
+            <div class="col-12 col-md-5 shadow-lg rounded mr-4 ml-4 mt-5 mb-0 pl-5 pt-3 pr-5 pb-3 bg-white" style="box-shadow: 0px 0px 25px -9px rgba(66, 68, 90, 1);">
                 <h4>
                     <span class="textNormalBreakerLight">
                         Przewozimy: 
@@ -170,7 +171,7 @@
                     </span>
                 </h4>
             </div>
-            <div class="col-5 shadow-lg rounded mr-4 ml-4 mt-5 mb-0 pl-5 pt-3 pr-5 pb-3 bg-white" style="box-shadow: 0px 0px 25px -9px rgba(66, 68, 90, 1);">
+            <div class="col-12 col-md-5 shadow-lg rounded mr-4 ml-4 mt-5 mb-0 pl-5 pt-3 pr-5 pb-3 bg-white" style="box-shadow: 0px 0px 25px -9px rgba(66, 68, 90, 1);">
                 <h4>
                     <span class="textNormalBreakerLight">
                         Jeżeli potrzebujesz przetransportować bezpiecznie pojazd: 
@@ -194,7 +195,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-5 shadow-lg rounded mr-4 ml-4 mt-2 mb-0 pl-5 pt-3 pr-5 pb-3 bg-white" style="box-shadow: 0px 0px 25px -9px rgba(66, 68, 90, 1);">
+            <div class="col-12 col-md-5 shadow-lg rounded mr-4 ml-4 mt-2 mb-0 pl-5 pt-3 pr-5 pb-3 bg-white" style="box-shadow: 0px 0px 25px -9px rgba(66, 68, 90, 1);">
                 <h4>
                     <hr>
                     <span class="textNormalBreakerLight">
@@ -207,11 +208,11 @@
                     </span>
                 </h4>
             </div>
-            <div class="col-5 shadow-lg rounded mr-4 ml-4 mt-2 mb-0 pl-5 pt-3 pr-5 pb-3 bg-white" style="box-shadow: 0px 0px 25px -9px rgba(66, 68, 90, 1);">
+            <div class="col-12 col-md-5  shadow-lg rounded mr-4 ml-4 mt-2 mb-0 pl-5 pt-3 pr-5 pb-3 bg-white" style="box-shadow: 0px 0px 25px -9px rgba(66, 68, 90, 1);">
                 <h4>
                     <hr>
                     <span class="textNormalBreakerLight">
-                        i szukasz kogoś, kto zabezpieczy i sprawnie przewiezie, niezależnie od warunków pogodowych, Twoje pojazdy na miejsce docelowe - <a href="javascript:;" onclick="ViewInfoBox()">zgłoś się do nas</a>.
+                        <span id="i-jezeliChange"></span> szukasz kogoś, kto zabezpieczy i sprawnie przewiezie, niezależnie od warunków pogodowych, Twoje pojazdy na miejsce docelowe - <a href="javascript:;" onclick="ViewInfoBox()">zgłoś się do nas</a>.
                     </span>
                     <hr>
                     <span class="textNormalBreaker">
@@ -223,7 +224,7 @@
         <div class="emptyBreaker"></div>
         <div class="row justify justify-content-center">
             
-            <div class="col-10 shadow-lg rounded mr-4 ml-4 mt-2 mb-0 pl-5 pt-3 pr-5 pb-3 bg-white" >
+            <div class="col-12 col-md-10 shadow-lg rounded mr-4 ml-4 mt-2 mb-0 pl-5 pt-3 pr-5 pb-3 bg-white" >
                 <h5>
                     Nie wymieniliśmy tego, czego potrzebujesz? - <a href="javascript:;" onclick="ViewInfoBox()">porozmiawajmy</a>
                 </h5>
@@ -235,7 +236,7 @@
     <div class="container-fluid">
         <div class="row justify-content-center">
             
-            <div class="col-6 m-4 pl-3 pt-3 pr-3 pb-3 bg-white" style="box-shadow: 0px 0px 25px -9px rgba(66, 68, 90, 1);">
+            <div class="col-12 col-md-6 m-4 pl-3 pt-3 pr-3 pb-3 bg-white" style="box-shadow: 0px 0px 25px -9px rgba(66, 68, 90, 1);">
                 <h1 style="text-align: center;">Posiadamy samochody:</h1>
                 
                 <div class="container-fluid">
@@ -387,10 +388,11 @@
     <div class="container-fluid" style="background-color: black;">
         <div class="row">
             <div class="col-9">
-                <h1>KONTAKT</h1>
-                <h1>FACEBOOK</h1>
-                <h1>KONTAKT</h1>
-                <h1>FACEBOOK</h1>
+                <h4><br></h4>
+                <h4>NIP: 6291152142</h4>
+                <h4>REGON: 385227981</h4>
+                <h4>EMAIL: marcar.biuro@op.pl</h4>
+                <h4>TELEFON: 537 664 643</h4>
             </div>
             <div class="col-3 p-0 m-0">
                 <img src="/images/endimg.png" alt="" class="img-fluid">
@@ -493,7 +495,6 @@
         </div>
     </div>
     <div class="pageDimmer" onclick="CloseInfoBox()">
-        
     </div>
 
 
