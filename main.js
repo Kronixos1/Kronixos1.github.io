@@ -75,7 +75,7 @@ $(document).ready(function() {
     
 
 
-    if(screenW >= 768){ //BIG
+    if(screenW >= screenH){ //BIG
         $('#i-jezeliChange').append("i")
         $(".showLarge").css({
             display: "inline"
@@ -250,6 +250,7 @@ var busCounter = 0;
 bus = $(".Bus");
 logo = $(".LogoAnimated");
 screenW = $(window).width();
+screenH = $(window).height();
 busLineWidth = $("#BusLine").width();
 
 function AnimateBus(){
