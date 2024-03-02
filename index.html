@@ -280,28 +280,6 @@
                         </div>
                     </div>
                 </div>
-
-
-                <div id="LiftImageContainer"> 
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="truckImg col-6 p-0 m-0 border border-dark">
-                                <img src="images/carClosed.png" class="img-fluid">
-                            </div>
-                            <div class="truckImg col-6 p-0 m-0 border border-dark">
-                                <img src="images/carOpen.png" class="img-fluid">
-                            </div> 
-                        </div>
-                        <div class="row">
-                            <div class="truckImg col-6 p-0 m-0 border border-dark" style="background-color: rgb(9, 42, 9);">
-                                <img src="images/carHalfOpen.png" class="img-fluid">
-                            </div>
-                            <div class="truckImg col-6 p-0 m-0 border border-dark">
-                                <img src="images/lift.png" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -406,100 +384,102 @@
     
     
     
-
-    <div class="contactInfo rounded">
-        
-            <div class="row justify justify-content-between">
-                <div id="popupLogoContainer">
-                    <img class="img-fluid" src="images/logo300x110.png" alt="">
+<div class="showLarge">
+    LARGE
+    <div class="contactInfo rounded" style="background-color: rgb(255, 255, 255);"> 
+        <img id="imgContactLarge" src="images/logo300x110.png" class="img-fluid" alt="MarCar">
+        <div id="leftPanelcontactLarge">
+            <div id="leftPanelTextLarge" class="textNormalBreaker">
+                
+                <span class="textNormalBreakerLight" style="position: relative; font-size: 1.5vw;">
+                    Kontakt:
+                </span>
+               
+                <div id="emailToolTipWrapper">
+                    <i class="bi bi-envelope-at-fill"></i>
+                    <a id="mailContactLink" href="javascript:;" class="contactLink">
+                        marcar.biuro@op.pl
+                    </a>
+                    <div id="emailToolTip">
+                        kliknij, aby skopiować
+                    </div>
                 </div>
-                <div class="row-1"><span id="contactCloseButton"><i class="bi bi-x-square-fill"></i></span></div>
-            </div>
-            <div class="row justify justify-content-between">
-                <div class="col-6 m-3">
-                    <ul id="contactLeftList">
-                        <li>
-                            <h3>
-                                <div class="textNormalBreaker">
-                                    Kontakt:
-                                </div>
-                            </h3>
-                        </li>
-                        <li>
-                            <h1>
-                                <div class="textNormalBreaker">
-                                    <div id="emailToolTipWrapper">
-                                        <i class="bi bi-envelope-at-fill"></i>
-                                        <a id="mailContactLink" href="javascript:;" class="contactLink">
-                                            marcar.biuro@op.pl
-                                        </a>
-                                        <div id="emailToolTip">
-                                            kliknij, aby skopiować
-                                        </div>
-                                    </div>
-                                </div>
-                            </h1>
-                        </li>
-                        <li><hr></li>
-                        <li>
-                            <h1>
-                                <div class="textNormalBreaker">
-                                    <div id="phoneToolTipWrapper">
-                                        <i class="bi bi-telephone-fill"></i>
-                                        <a id="phoneContactLink" href="javascript:;" class="contactLink">
-                                            537 664 643
-                                        </a>
-                                        <div id="phoneToolTip">
-                                            kliknij, aby skopiować
-                                        </div>
-                                    </div>
-                                </div>
-                            </h1>
-                        </li>
-                        <li><hr></li>
-                    </ul>
-                </div>
-                <div class="col-5 m-3">
-                    <ul id="contactRightList">
-                        <li>
-                            <h3>
-                                <div class="textNormalBreaker">
-                                    Znajdź nas także na
-                                </div>
-                            </h3>
-                        </li>
-                        <li>
-                            <h1>
-                                <div class="textNormalBreaker">
-                                    <a class="contactLink" href="https://www.facebook.com/people/MarCar/61551374799650/" target="_blank">Facebook</a><span id="facebookIconClick"><i class="bi bi-facebook" style="color:#316FF6"></i></span>
-                                </div>
-                                <div class="empty">
-                                    .
-                                </div>
-                            </h1>
-                        </li>
-                        
-                        <li><hr></li>
-                    </ul>
+                <div class="pseudoHr"></div>
+                <div class="textNormalBreaker">
+                    <div id="phoneToolTipWrapper">
+                        <i class="bi bi-telephone-fill"></i>
+                        <a id="phoneContactLink" href="javascript:;" class="contactLink">
+                            537 664 643
+                        </a>
+                        <div id="phoneToolTip">
+                            kliknij, aby skopiować
+                        </div>
+                    </div>
+                    <div class="pseudoHr"></div>
                 </div>
             </div>
-            <div class="row justify justify-content-center">
-                <div class="col-9">
-                    <h3 style="text-align: center;">
-                        <span class="textNormalBreaker">
-                            Transport, który zasługuje na Twoje zaufanie! 
-                        </span>
-                    </h3>
+            
+        </div>
+        <div id="rightPanelcontactLarge">
+            <div id="rightPanelTextLarge">
+            
+                <div class="textNormalBreakerLight" style="position: relative; right:10%; font-size: 1.5vw;">
+                    Znajdź nas także na:
+                </div>
+                
+                <div id="facebookLinkLarge"class="textNormalBreaker">
+                    <a class="contactLink" href="https://www.facebook.com/people/MarCar/61551374799650/" target="_blank">Facebook</a><span id="facebookIconClick"><i class="bi bi-facebook" style="color:#316FF6"></i></span>
+                    <div class="empty">
+                        .
+                    </div>
+                    <div class="pseudoHr" style="float: right"></div>
                 </div>
             </div>
         </div>
+        <div id="bottomPanelcontactLarge">
+            <h4><span class="textNormalBreaker" >Transport, który zasługuje na Twoje Zaufanie!</span></h4>
+        </div>
     </div>
-    <div class="pageDimmer" onclick="CloseInfoBox()">
+</div>
+
+<div class="showSmall">
+    SMALL
+    <div class="contactInfo rounded" style="background-color: rgb(255, 255, 255);"> 
+        <div id="firstRowContactSmall">
+            <img id="imgContactSmall" class="img-fluid" src="images/logo300x110.png" alt="MarCar">
+            <span id="contactCloseButton" style="float:right; right:10px"><i class="bi bi-x-square-fill" ></i></span>
+        </div>
+        <div id="secondRowContactSmall">
+            <div id="secondRowTextSmall">
+                <span class="textNormalBreakerLight" style="position: relative;">
+                    Kontakt:
+                </span>
+                
+            </div>
+        </div>
+        <div id="thirdRowContactSmall">
+            <div id="thirdRowTextSmall">
+                <i class="bi bi-envelope-at-fill"></i>
+                <a id="mailContactLink" href="mailto:kdyduch14@gmail.com" class="contactLink">
+                    marcar.biuro@op.pl
+                </a>
+            </div>
+        </div>
+        <div id="fourthRowContactSmall">
+            <div id="thirdRowTextSmall">
+                <i class="bi bi-telephone-fill"></i>
+                <a id="phoneContactLink" href="tel:537-664-643" class="contactLink">
+                    537 664 643
+                </a>
+            </div>
+        </div>
+        <div id="fifthRowContactSmall">
+dfgdfgasdfdfg
+        </div>
     </div>
+</div>
 
-
-
-
+<div class="pageDimmer" onclick="CloseInfoBox()"></div>
 
 
 

@@ -85,3 +85,32 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+    <div id="LiftImageContainer"> 
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="truckImg col-6 p-0 m-0 border border-dark">
+                                <img src="images/carClosed.png" class="img-fluid">
+                            </div>
+                            <div class="truckImg col-6 p-0 m-0 border border-dark">
+                                <img src="images/carOpen.png" class="img-fluid">
+                            </div> 
+                        </div>
+                        <div class="row">
+                            <div class="truckImg col-6 p-0 m-0 border border-dark" style="background-color: rgb(9, 42, 9);">
+                                <img src="images/carHalfOpen.png" class="img-fluid">
+                            </div>
+                            <div class="truckImg col-6 p-0 m-0 border border-dark">
+                                <img src="images/lift.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>

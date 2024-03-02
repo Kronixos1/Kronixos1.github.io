@@ -248,13 +248,9 @@ a{
 
 .contactInfo{
     z-index: 105;
-    width: 50%;
-    height: 50%;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    
     background-color: rgb(255, 255, 255);
-    transform: translate(-50%, -50%);
     box-shadow: 0px 0px 40px 0px rgb(0, 0, 0);  
 }
 .pageDimmer{
@@ -276,20 +272,72 @@ a{
     font-size: 300%;
     cursor: pointer;
 }
-#popupLogoContainer{
+
+#imgContactLarge{
+    position:absolute; 
+    width: 30%; 
+    left:20px;
+    top:20px;
+}
+
+#leftPanelcontactLarge{
+    width: 60%;
+    height: 90%;
+    float: left;
+}
+#rightPanelcontactLarge{
+    width: 40%;
+    height: 90%;
+    float: left;
+}
+#bottomPanelcontactLarge{
+    height: 10%;
+    
+}
+div[id*='RowContactSmall']{
+    height: 20%;
+    width: 100%;
+}
+#secondRowContactSmall{
+    height: 10%;
+}
+div[id*='RowTextSmall']{
     position: relative;
-    padding-top: 15px;
-    left:20%;
-    transform: translate(-50%, 0%);
+    left:2%;
+    font-size: 8vw;
 }
-#contactRightList{
-    list-style-type: none;
+#firstRowContactSmall{
+
+}
+#imgContactSmall{
+    position:absolute; 
+    width: 50%; 
+    left:10px;
+    top:10px;
+}
+#leftPanelTextLarge{
+    position: relative;
+    top:30%;
+    width: 100%;
+    font-size: 2vw;
+    left: 3%;
+}
+#rightPanelTextLarge{
+    position: relative;
+    top:33%;
+    width: 100%;
+    font-size: 2vw;
+    right: 4%;
     text-align: right;
+    
 }
-#contactLeftList{
-    padding-left: 0;
-    list-style-type: none;
-    text-align: left;
+.pseudoHr{
+    position: relative;
+    top:30%;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 2px;
+    left: 1%;
 }
 .contactLink{
     height: 100%;
@@ -348,4 +396,12 @@ a{
 
 ul{
     list-style: none;
+}
+
+.showLarge{
+    background-color: green;
+}
+
+.showSmall{
+    background-color: rebeccapurple;
 }

@@ -5,6 +5,7 @@ conR = $(".imgRightContainer");
 slideTime = 5000;
 var smallScreen = false
 
+
 $(document).ready(function() {
     CloseInfoBox()
     console.log("JS Loaded");
@@ -74,12 +75,42 @@ $(document).ready(function() {
     
 
 
-    if(screenW >= 768){
+    if(screenW >= 768){ //BIG
         $('#i-jezeliChange').append("i")
-    }else{
-        $('#i-jezeliChange').append("Jeżeli")
+        $(".showLarge").css({
+            display: "inline"
+        })
+        $(".showSmall").css({
+            display: "none"
+        })
+        
+        $('.contactInfo').css({
+            width: "50%",
+            height: "50%",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)"
+        })
+    }else{ //SMALL
         smallScreen = true;
+        $('#i-jezeliChange').append("Jeżeli")
+        $(".showLarge").css({
+            display: "none"
+        })
+        $(".showSmall").css({
+            display: "inline"
+        })
+
+        $('.contactInfo').css({
+            width: "100%",
+            height: "75%",
+            top: "75%",
+            left: "0%",
+            transform: "translate(0%, -75%)"
+        })
     }
+
+    ViewInfoBox(); //usun to pozniej
 });
 
 
