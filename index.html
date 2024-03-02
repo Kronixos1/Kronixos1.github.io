@@ -13,9 +13,41 @@
     
 </head>
 <body>
+    <div id="topOfTheSite"></div>
+    <div class="container-fluid d-inline d-md-none">
+        <div id="topMenuSmall" class="row border border-dark">
+            <div class="col-6" id="smallMenuLeftCol">
+                <div class="smallLogo">
+                    <img src="images/logo300x110.png" class="smallLogo" alt="MarCar">
+                </div>
+            </div>
+            <div class="col-6" id="smallMenuRightCol">
+                <div id="dropdownIcon" >
+                    <span id="smallMenuText" class="textNormalBreaker">
+
+                        <a class="contactLink" href="javascript:;" onclick="ViewInfoBox()">Kontakt   <i class="bi bi-envelope-at"></i></a>
+                    </span>
+                </div>
+            </div>
+            <!--
+            
+            <div class="col-2">
+                <span id="dropdownIcon">
+                    <i class="bi bi-list"></i>
+                </span>
+            </div>
+            <div class="dropDownMenu">
+                <ul style="font-size: 9vw;">
+                    <li><a class="contactLink" href="javascript:;" onclick="document.getElementById('topOfTheSite').scrollIntoView();">Oferta<i class="bi bi-1-square-fill"></i></a></li>
+                    <li><a class="contactLink" href="javascript:;" onclick="ViewInfoBox()"><i class="bi bi-envelope-at"></i>Kontakt</a></li>
+                    <li><a href="#" style="color:black !important;"><i class="bi bi-person-badge-fill"></i>O nas</a></li>
+                </ul>
+            </div>
+
+            -->
+        </div>
+    </div>
     
-
-
 
     <div class="container-fluid d-none d-md-inline" style="position: fixed; z-index: 99999; top: 0px;"> <!-- TOPKA-->
         <div class="row" style="background-color: white;" >
@@ -319,42 +351,46 @@
  
     <div class="container-fluid mt-5"> <!--4podział break-->
         <div class="row justify-content-center  m-0 bg-white" style="text-align:justify; text-align: center;">
-            <div class="col m-0 p-3 border border-dark">
+            <div class="col-12 col-md-3 m-0 p-3 border border-dark">
                 <h4>
                     <span class="textNormalBreaker">
                     Znamy wartość Twojego czasu. Dlatego nasze dostawy są zawsze <span class="textImportant">punktualne</span>, dzięki precyzyjnej organizacji i terminowym planom.
                     </span>
                 </h4>
+                <div class="emptyBreaker" style="width:50px"><div class="empty">a</div></div>
                 <div class="iconStyle">
                     <i class="bi bi-watch"></i>
                 </div>
             </div>
-            <div class="col m-0 p-3 border border-dark">
+            <div class="col-12 col-md-3 m-0 p-3 border border-dark">
                 <h4>
                     <span class="textNormalBreaker">
                         Nasz zespół to <span class="textImportant">profesjonaliści</span>, którzy podchodzą do każdego zlecenia z zaangażowaniem i troską o szczegóły.
                     </span>
                 </h4>
+                <div class="emptyBreaker" style="width:50px"><div class="empty">a</div></div>
                 <div class="iconStyle">
                     <i class="bi bi-person-check-fill"></i>
                 </div>
             </div>
-            <div class="col m-0 p-3 border border-dark">
+            <div class="col-12 col-md-3 m-0 p-3 border border-dark">
                 <h4>
                     <span class="textNormalBreaker">
                     Twój ładunek jest dla nas priorytetem, a <span class="textImportant">bezpieczeństwo</span> i  <span class="textImportant">terminowość</span> to nasze fundamenty.
                     </span>
                 </h4>
+                <div class="emptyBreaker" style="width:50px"><div class="empty">a</div></div>
                 <div class="iconStyle">
                     <i class="bi bi-box-seam-fill"></i>
                 </div>
             </div>
-            <div class="col m-0 p-3 border border-dark">
+            <div class="col-12 col-md-3 m-0 p-3 border border-dark">
                 <h4>
                     <span class="textNormalBreaker">
                     Bez względu na skalę Twojego zlecenia, możesz polegać na <span class="textImportant">niezawodności</span> naszych usług transportowych. 
                     </span>
                 </h4>
+                <div class="emptyBreaker" style="width:50px"><div class="empty">a</div></div>
                 <div class="iconStyle">
                     <i class="bi bi-check-lg"></i>
                 </div>
@@ -373,7 +409,7 @@
                 <h4>TELEFON: 537 664 643</h4>
             </div>
             <div class="col-3 p-0 m-0">
-                <img src="/images/endimg.png" alt="" class="img-fluid">
+                <img src="/images/endimg.png" alt="" class="img-fluid d-none d-md-inline">
             </div>
         </div>
     </div>
@@ -385,9 +421,9 @@
     
     
 <div class="showLarge">
-    LARGE
     <div class="contactInfo rounded" style="background-color: rgb(255, 255, 255);"> 
         <img id="imgContactLarge" src="images/logo300x110.png" class="img-fluid" alt="MarCar">
+        <span class="contactCloseButton" style="position: absolute; float:right; right:10px"><i class="bi bi-x-square-fill" ></i></span>
         <div id="leftPanelcontactLarge">
             <div id="leftPanelTextLarge" class="textNormalBreaker">
                 
@@ -437,17 +473,16 @@
             </div>
         </div>
         <div id="bottomPanelcontactLarge">
-            <h4><span class="textNormalBreaker" >Transport, który zasługuje na Twoje Zaufanie!</span></h4>
+            <h4 style="text-align: center;"><span class="textNormalBreaker" >Transport, który zasługuje na Twoje Zaufanie!</span></h4>
         </div>
     </div>
 </div>
 
 <div class="showSmall">
-    SMALL
     <div class="contactInfo rounded" style="background-color: rgb(255, 255, 255);"> 
         <div id="firstRowContactSmall">
             <img id="imgContactSmall" class="img-fluid" src="images/logo300x110.png" alt="MarCar">
-            <span id="contactCloseButton" style="float:right; right:10px"><i class="bi bi-x-square-fill" ></i></span>
+            <span class="contactCloseButton" style="float:right; right:10px"><i class="bi bi-x-square-fill" ></i></span>
         </div>
         <div id="secondRowContactSmall">
             <div id="secondRowTextSmall">
@@ -459,7 +494,7 @@
         </div>
         <div id="thirdRowContactSmall">
             <div id="thirdRowTextSmall">
-                <i class="bi bi-envelope-at-fill"></i>
+                <i class="bi bi-envelope-at-fill" style="color:goldenrod"></i>
                 <a id="mailContactLink" href="mailto:kdyduch14@gmail.com" class="contactLink">
                     marcar.biuro@op.pl
                 </a>
@@ -467,14 +502,19 @@
         </div>
         <div id="fourthRowContactSmall">
             <div id="thirdRowTextSmall">
-                <i class="bi bi-telephone-fill"></i>
+                <i class="bi bi-telephone-fill" style="color:goldenrod"></i>
                 <a id="phoneContactLink" href="tel:537-664-643" class="contactLink">
                     537 664 643
                 </a>
             </div>
         </div>
         <div id="fifthRowContactSmall">
-dfgdfgasdfdfg
+            <div id="thirdRowTextSmall">
+                <span class="textNormalBreakerLight" style="position: relative;">
+                    Znajdź nas także na: <br>
+                </span>
+                <span id="facebookIconClick"><i class="bi bi-facebook" style="color:#316FF6"></i></span><a class="contactLink" href="https://www.facebook.com/people/MarCar/61551374799650/" target="_blank">Facebook</a>
+            </div>
         </div>
     </div>
 </div>
@@ -486,7 +526,7 @@ dfgdfgasdfdfg
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>

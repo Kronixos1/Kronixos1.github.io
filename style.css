@@ -187,8 +187,8 @@ body{
 .iconStyle{
     color:goldenrod;
     position: absolute;
-    bottom: 10px;
-    font-size: 200%;
+    bottom: 5px;
+    font-size: 30px;
 }
 .textImportant{
     color:goldenrod;
@@ -263,8 +263,8 @@ a{
     left: 0%;
     background-color: rgba(0, 0, 0, 0.5);
 }
-#contactCloseButton{
-    z-index: 999999;
+.contactCloseButton{
+    z-index: 400;
     color:gray;
     position: relative;
     right: 50%;
@@ -295,20 +295,24 @@ a{
     
 }
 div[id*='RowContactSmall']{
-    height: 20%;
+    height: 10%;
     width: 100%;
+}
+#firstRowContactSmall{
+    height: 20%;
 }
 #secondRowContactSmall{
     height: 10%;
+}
+#fourthRowContactSmall{
+    height: 15%;
 }
 div[id*='RowTextSmall']{
     position: relative;
     left:2%;
     font-size: 8vw;
 }
-#firstRowContactSmall{
 
-}
 #imgContactSmall{
     position:absolute; 
     width: 50%; 
@@ -404,4 +408,44 @@ ul{
 
 .showSmall{
     background-color: rebeccapurple;
+}
+
+#topMenuSmall{
+    
+    z-index: 20;
+    background-color:white; 
+    position:sticky; 
+    top:0;
+    
+}
+
+.dropdown{
+    position: relative;
+    
+}
+
+#dropdownIcon{
+    position: relative;
+    font-size: 8vw;
+    
+    text-align: right;
+    right:4%;
+}
+
+.dropdown-menu{
+    position: relative;
+    right: 50%;
+}
+.dropDownMenu{
+    display:none;
+}
+#smallMenuText{
+    font-size: 6vw;
+}
+.smallLogo{
+    width: 50vw;
+}
+
+#smallMenuLeftCol, #smallMenuRightCol{
+    height: auto;
 }

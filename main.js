@@ -3,8 +3,8 @@ conM = $(".imgContainer");
 conL = $(".imgLeftContainer");
 conR = $(".imgRightContainer");
 slideTime = 5000;
-var smallScreen = false
-
+var smallScreen = false;
+var dropDownOpen = false;
 
 $(document).ready(function() {
     CloseInfoBox()
@@ -62,10 +62,18 @@ $(document).ready(function() {
         }, 100)
     });
     
-    $("#contactCloseButton").on("click", function(){
+    $(".contactCloseButton").on("click", function(){
         CloseInfoBox()
     });
     
+
+    $("#dropdownIcon").on("click", function(){
+        ToggleDropDown()
+    });
+
+    $(".contactLink").on("click", function(){
+        CloseDropDown()
+    });
 
     SlidePause(conL);
     SlidePause(conM);
@@ -75,7 +83,7 @@ $(document).ready(function() {
     
 
 
-    if(screenW >= 768){ //BIG
+    if(screenW >= screenH){ //BIG
         $('#i-jezeliChange').append("i")
         $(".showLarge").css({
             display: "inline"
@@ -108,12 +116,30 @@ $(document).ready(function() {
             left: "0%",
             transform: "translate(0%, -75%)"
         })
+
     }
 
-    ViewInfoBox(); //usun to pozniej
+    //ViewInfoBox(); //usun to pozniej
 });
 
 
+function ToggleDropDown(){
+    if(dropDownOpen){
+        CloseDropDown()
+    }else{
+        PopIn($('.dropDownMenu'));
+        $('.dropDownMenu').css({
+            display: "inline"
+        })
+        dropDownOpen = true;
+    }
+}
+function CloseDropDown(){
+    $('.dropDownMenu').css({
+        display: "none"
+    })
+    dropDownOpen = false;
+}
 
 
 function ViewInfoBox(){
@@ -250,6 +276,7 @@ var busCounter = 0;
 bus = $(".Bus");
 logo = $(".LogoAnimated");
 screenW = $(window).width();
+screenH = $(window).height();
 busLineWidth = $("#BusLine").width();
 
 function AnimateBus(){
