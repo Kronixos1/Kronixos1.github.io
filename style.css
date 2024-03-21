@@ -449,3 +449,19 @@ ul{
 #smallMenuLeftCol, #smallMenuRightCol{
     height: auto;
 }
+
+.photoPlaceHolder{
+    width: calc(1280px/2);
+    height: calc(720px/2);
+    background-color: aqua;
+}
+
+.hand{
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.underlineBreaker{
+    text-decoration: underline;
+}
